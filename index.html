@@ -56,10 +56,10 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Pragya Sharma, </a>
+                <a href="https://scholar.google.com/citations?hl=en&user=Jra7ZnsAAAAJ" target="_blank">Pragya Sharma, </a>
                   <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
                   <span class="author-block"> -->
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Mani B. Srivastava</a>
+                    <a href="https://scholar.google.com/citations?user=X2Qs7XYAAAAJ&hl=en" target="_blank">Mani B. Srivastava</a>
                   </span>
                   </div>
 
@@ -123,11 +123,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -136,7 +135,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -147,7 +146,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            This paper investigates the challenges posed by delays in Closed-Loop Sense-Act Systems in the context of Adversarial Internet of Things (IoT) applications. Prior work focused on studying the impact of delays on a single resource-constrained platform. To capitalize on the capabilities of different computing platforms, this work investigates the adaptation of control placement to optimize application performance in distributed settings. An Adaptive Control Placement (ACP) strategy is introduced, which dynamically switches between a local controller with lower accuracy and a cloud controller with higher accuracy based on network dynamics, optimizing overall application performance. The effectiveness of the ACP strategy is evaluated using a simulated Vehicle Following application in the PyBullet simulator. The results demonstrate that in terms of a time-to-complete (TTC) metric, the ACP strategy consistently outperforms strategies that use a fixed combination of controller type and location (e.g., PID at Local and MPC at Cloud) across various deadline scenarios.
           </p>
         </div>
       </div>
@@ -156,106 +155,42 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+  <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Delays in Sense-Act Systems</h2>
+        <div class="content has-text-justified">
+          <p>
+          Each module within the closed-loop Sense-Act system introduces its own computational delay (\textit{d\textsubscript{1}}, \textit{d\textsubscript{2}}, and \textit{d\textsubscript{3}}), collectively influencing the overall application performance by shaping the accuracy-latency trade-off. Typically, system designs accommodate these delays by adopting a worst-case approach, where sensing and actuation are scheduled at fixed intervals that exceed the cumulative worst-case delays of \textit{d\textsubscript{1}}, \textit{d\textsubscript{2}}, and \textit{d\textsubscript{3}}. Alternatively, some systems adopt hybrid configurations, wherein sensing occurs at predetermined intervals while actuation is triggered as soon as the corresponding action is computed. This interplay between module-specific delays and the timing configurations for sensing and actuation has a significant impact on application performance, influencing both responsiveness and accuracy.
+          </p>
+          <figure>
+        <img src="static/images/Figure1.png" alt="intro">
+        <figcaption>Illustrating how a robot can use its memory to guide its playing strategy.</figcaption>
+        </figure>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
-
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
 
 
 <!-- Paper poster -->
@@ -277,7 +212,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{sharma2023impact,
+                  title={Impact of Delays and Computation Placement on Sense-Act Application Performance in IoT},
+                  author={Sharma, Pragya and Srivastava, Mani B},
+                  booktitle={MILCOM 2023-2023 IEEE Military Communications Conference (MILCOM)},
+                  pages={133--138},
+                  year={2023},
+                  organization={IEEE}}
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
