@@ -174,6 +174,28 @@
   </div>
 </section>
 
+  <section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">System Design</h2>
+        <div class="content has-text-justified">
+          <p>
+          To demonstrate the placement of control in a distributed setting, we consider two execution locations for the control algorithm: local and cloud. Local control refers to an on-device controller, directly connected to the device's sensors via a low-latency link but constrained by limited computational resources due to its deployment on a resource-limited platform. In contrast, cloud control represents a remote controller equipped with significantly greater computational capabilities but connected to the device through a high-latency network link.
+          </p>
+          <p>
+          This architecture is implemented for a Vehicle Following application using a simulated F1/10 racecar  and its environment in the Pybullet simulator. The simulation runs on a MacBook Pro and is connected to the local controller, a Raspberry Pi 4B, via Ethernet, collectively representing the vehicular network. The cloud controller, hosted on an Amazon AWS EC2 (N. California) instance, communicates with the vehicular network over Wi-Fi. This setup provides a representative framework to evaluate the trade-offs between low-latency local control and high-computation cloud-based control in distributed control systems.
+          </p>
+          <figure>
+        <img src="static/images/Figure2.png" alt="intro">
+        <figcaption>System Setup with Local and Cloud control locations.</figcaption>
+        </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Youtube video -->
 <!-- <section class="hero is-small is-light">
   <div class="hero-body">
