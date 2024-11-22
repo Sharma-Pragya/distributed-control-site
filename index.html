@@ -165,7 +165,7 @@
           Each module within the closed-loop Sense-Act system introduces its own computational delay (<em>d<sub>1</sub></em>, <em>d<sub>2</sub></em>, and <em>d<sub>3</sub></em>), collectively influencing the overall application performance by shaping the accuracy-latency trade-off. Typically, system designs accommodate these delays by adopting a worst-case approach, where sensing and actuation are scheduled at fixed intervals that exceed the cumulative worst-case delays of <em>d<sub>1</sub></em>, <em>d<sub>2</sub></em>, and <em>d<sub>3</sub></em>. Alternatively, some systems adopt hybrid configurations, wherein sensing occurs at predetermined intervals while actuation is triggered as soon as the corresponding action is computed. This interplay between module-specific delays and the timing configurations for sensing and actuation has a significant impact on application performance, influencing both responsiveness and accuracy.
           </p>
           <figure>
-        <img src="static/images/Figure1.png" alt="intro", style="max-width:70%; height:auto;">
+        <img src="static/images/Figure1.png" alt="intro", style="max-width:75%; height:auto;">
         <figcaption>Visualization of closed-loop Sense-Act Systems with module delays <em>d<sub>1</sub></em> , <em>d<sub>2</sub></em> , and <em>d<sub>3</sub></em> .</figcaption>
         </figure>
         </div>
@@ -209,15 +209,22 @@
         <figcaption>Application performance of PID and MPC controllers with Local and Cloud deployment under various actuation deadlines. While Local PID finishes faster than Cloud MPC, the latter has lower trajectory tracking error (denoted by bar labels).</figcaption>
         </figure>
         </div>
-        <h3 class="title is-4">Adaptive Control Placement (ACP) Performance</h3>
+        <h3 class="title is-4">Adaptive Control Placement (ACP)</h3>
         <div class="content has-text-justified">
         <figure>
         <img src="static/images/Figure4.png" alt="math", style="max-width:70%; height:auto;">
-        <figcaption>Scaling of IQM scores</figcaption>
+        <figcaption>Distributed architecture of Adaptive Control Placement strategy.</figcaption>
         </figure>
         <p>
           Our findings indicate that the optimal performance is achieved by deploying PID on-device and MPC in the cloud. Building on this insight, we design a distributed system employing an Adaptive Control Placement (ACP) strategy, illustrated above. In this framework, the computationally intensive MPC is hosted on the high-latency but faster cloud platform, while the simpler PID controller resides on the low-latency, resource-constrained local device. While MPC is preferred for its higher accuracy, the system seamlessly switches to PID during periods of elevated network latency, ensuring continuous and reliable control.
         </p>
+        </div>
+        <h3 class="title is-4">ACP Performance</h3>
+        <div class="content has-text-justified">
+        <figure>
+        <img src="static/images/Figure5.png" alt="math", style="max-width:70%; height:auto;">
+        <figcaption>Application Performance of Adaptive Control Placement strategy. ACP outperforms Local PID and Cloud MPC in terms of time-to-complete. Tracking error of ACP (denoted by bar labels) lies in between that of PID and MPC.</figcaption>
+        </figure>
         </div>
         </div>
       </div>
@@ -250,7 +257,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/poster.pdf" width="100%" height="550">
           </iframe>
         
       </div>
